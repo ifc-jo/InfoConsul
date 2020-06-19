@@ -1,4 +1,4 @@
-#news{
+#news {
   padding-top: 25px;
 }
 
@@ -6,13 +6,11 @@
   padding: 0% 15%;
   /* background-color: #120136; */
   /* background-color: #00005c; */
-
   /* background-color: #1b6ca8; */
   /* background-color: #fff; */
-
 }
 
-.ifc-container-logo-title{
+.ifc-container-logo-title {
   /* background-color: #fff; */
   background-color: #00005c;
   font-family: Montserrat;
@@ -25,14 +23,13 @@
   padding-bottom: 18px;
 }
 
-.ifc-image-logo{
+.ifc-image-logo {
   width: 350px;
   padding-bottom: 5%
 }
 
-navbar{
+navbar {
   padding: 0 0 4.5rem;
-
 }
 
 .navbar-brand {
@@ -41,31 +38,30 @@ navbar{
   font-weight: bold;
 }
 
-.nav-item{
+.nav-item {
   padding: 0 18px
 }
 
-.nav-link{
+.nav-link {
   font-size: 1.15rem;
   font-family: "Montserrat";
   font-weight: 300;
   color: #00005c !important;
 }
 
-.ifc-carousel-img{
+.ifc-carousel-img {
   max-height: 500px;
   width: 100%;
   object-fit: cover;
-
 }
 
 .ifc-container-services {
   /* background-color: blue; */
-padding: 18px 10% 20px;
+  padding: 18px 10% 20px;
 }
 
 .card {
-  margin: 0 auto; /* Added */
-float: none; /* Added */
-margin-bottom: 10px; /* Added */
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
 }
