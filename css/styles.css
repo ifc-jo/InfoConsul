@@ -1,26 +1,8 @@
-#news {
-  padding-top: 25px;
-}
+
+/* ******************* MENU HORIZONTAL ******************** */
 
 .ifc-container-menu {
-  padding: 0% 15%;
-  /* background-color: #120136; */
-  /* background-color: #00005c; */
-  /* background-color: #1b6ca8; */
-  /* background-color: #fff; */
-}
-
-.ifc-container-logo-title {
-  /* background-color: #fff; */
-  background-color: #00005c;
-  font-family: Montserrat;
-  font-weight: 900;
-  font-size: 2.5rem;
-  line-height: 1.5;
-  /* color: #00005c; */
-  color: #fff;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: 0.5% 3%;
 }
 
 .ifc-image-logo {
@@ -32,21 +14,98 @@ navbar {
   padding: 0 0 4.5rem;
 }
 
-.navbar-brand {
-  font-family: "Ubuntu";
-  font-size: 2.0rem;
-  font-weight: bold;
-}
-
 .nav-item {
   padding: 0 18px
 }
 
-.nav-link {
+.navbar-nav .nav-link {
   font-size: 1.15rem;
   font-family: "Montserrat";
-  font-weight: 300;
+  font-weight: 500;
   color: #00005c !important;
+  text-align: right;
+  /* background-color: grey; */
+  padding-left: 5%;
+
+}
+
+/* ******************* MENU VERTICAL COLAPSADO ******************** */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  /* background-color: #111; */
+  /* background-color: #555e5d; */
+  background-color: #555e8d;
+  /* background-color: #6E7A8D; */
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  font-family: "Montserrat";
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  /* font-size: 25px; */
+  font-size: 1.5rem;
+  /* color: #818181; */
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/* ************************** TITULO *************************** */
+
+.ifc-container-logo-title {
+  background-color: #00005c;
+  /* font-family: Montserrat; */
+  /* font-weight: 900; */
+  /* line-height: 1.0; */
+  font-family: "Bree Serif";
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 18px;
+}
+
+/* ************************** Carousel of Services *********************** */
+#carouselSlidesOnly {
+  position: relative;
+  z-index: 1;
+}
+
+.carousel-item:after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 36, 0.5);
 }
 
 .ifc-carousel-img {
@@ -55,13 +114,128 @@ navbar {
   object-fit: cover;
 }
 
-.ifc-container-services {
-  /* background-color: blue; */
+/* Buttons over the Carousel */
+.ifc-image-button {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 60%;
+  /* margin: 0 15%; */
+  padding: 0 15%;
+  z-index: 2;
+}
+
+.ifc-image-button h3 {
+  font-family: "Bree Serif";
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+  /* color: #00005c; */
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .ifc-image-button {
+    top: 35%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .ifc-image-button {
+    top: 20%;
+  }
+}
+
+.ifc-btn {
+  width: 250px;
+  background-color: #1B4775;
+  border-color: #1B4775;
+  margin-top: 2%;
+}
+
+.ifc-control-buttons-carousel {
+  position: absolute;
+  z-index: 3;
+}
+
+
+/* Section News */
+#news {
+  padding-top: 25px;
+  margin: 10px
+}
+
+.ifc-row-news {
+  font-family: "Montserrat";
+  margin-left: 1px;
+  margin-right: 1px;
   padding: 18px 10% 20px;
 }
 
-.card {
-  margin: 0 auto;
-  float: none;
-  margin-bottom: 10px;
+.card-body {
+  text-align: left;
+}
+
+.card-title {
+  font-weight: 500;
+}
+
+.card-img-top {
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.ifc-card-ref:link {
+  color: #000;
+}
+
+.ifc-card-ref:visited {
+  color: #000;
+}
+
+.ifc-card-ref:hover {
+  color: #00a8cc;
+  text-decoration: none;
+}
+
+.ifc-card-ref:active {
+  color: #00a8cc;
+}
+
+#footer {
+  background-color: #1B4775;
+  text-align: center;
+  padding: 3% 0 1%;
+  font-family: "Montserrat";
+  color: #fff;
+}
+
+#footer a:link, #footer a:visited {
+  color: #fff;
+}
+
+#footer a:hover, #footer a:active {
+  color: #00a8cc;
+  text-decoration: none;
+}
+
+/* ************************************************************************************
+********************** company.html - Company Presentation *************************
+************************************************************************************ */
+
+
+.ifc-container-image-company-presentation {
+  padding: 0;
+}
+
+.ifc-image-company-presentation{
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ifc-container-company-presentation{
+  font-family: Montserrat;
+  font-size: 1.3rem;
+  padding: 3% 4.5rem;
 }
